@@ -70,6 +70,15 @@ function filterTodo(event){
                 else{
                     todo.style.display = "none";
                 }
+                break;
+            case "not-completed":
+                if(!todo.classList.contains("completed")){
+                    todo.style.display = "flex";
+                }
+                else{
+                    todo.style.display = "none";
+                }
+                break;
         }
     });
 }
